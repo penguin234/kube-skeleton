@@ -28,7 +28,7 @@ class App extends Component {
       })
     };
 
-    fetch('http://back-service/predict', requestOptions)
+    fetch('http://api.minddetector.me/predict', requestOptions)
       .then(res => res.json())
       .then(data => {
         this.setState({
