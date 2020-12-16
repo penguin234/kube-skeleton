@@ -50,6 +50,13 @@ app.post('/predict', function(req, res) {
 });
 
 
+//health check
+
+app.get('/', function(req, res) {
+    res.send({'result': 'success'});
+});
+
+
 const PORT = 8080;
 
 const server = app.listen(PORT, function() {
