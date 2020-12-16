@@ -13,7 +13,7 @@ spec:
         app: front
     spec:
       containers:
-      - image: front-struct:1.0
+      - image: penguin1234/front-struct:1.0
         name: front-container
         ports:
         - containerPort: 3000

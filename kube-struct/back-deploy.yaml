@@ -13,7 +13,7 @@ spec:
         app: back
     spec:
       containers:
-      - image: back-struct:1.0
+      - image: penguin1234/back-struct:1.0
         name: back-container
         ports:
         - containerPort: 8080

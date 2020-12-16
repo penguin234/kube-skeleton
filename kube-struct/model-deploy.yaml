@@ -13,7 +13,7 @@ spec:
         app: model
     spec:
       containers:
-      - image: model-struct:1.0
+      - image: penguin1234/model-struct:1.0
         name: model-container
         ports:
         - containerPort: 5000
