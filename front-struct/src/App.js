@@ -28,7 +28,7 @@ class App extends Component {
       })
     };
 
-    fetch('http://192.168.99.100:8080/predict', requestOptions)
+    fetch('http://back-service/predict', requestOptions)
       .then(res => res.json())
       .then(data => {
         this.setState({

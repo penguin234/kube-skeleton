@@ -19,7 +19,7 @@ const ID = genID(0, 100000);
 const { URLSearchParams } = require('url');
 
 const fetch = require('node-fetch');
-const modelServer = 'http://192.168.99.100:5000'
+const modelServer = 'http://model-service'
 
 app.post('/predict', function(req, res) {
     let a = req.body['a'];

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-deploy
+spec:
+  selector:
+    matchLabels:
+      app: back
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: back
+    spec:
+      containers:
+      - image: back-struct:1.0
+        name: back-container
+        ports:
+        - containerPort: 8080

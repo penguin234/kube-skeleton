@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model-deploy
+spec:
+  selector:
+    matchLabels:
+      app: model
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: model
+    spec:
+      containers:
+      - image: model-struct:1.0
+        name: model-container
+        ports:
+        - containerPort: 5000

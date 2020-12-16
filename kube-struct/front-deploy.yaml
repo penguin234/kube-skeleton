@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deploy
+spec:
+  selector:
+    matchLabels:
+      app: front
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+      - image: front-struct:1.0
+        name: front-container
+        ports:
+        - containerPort: 3000
