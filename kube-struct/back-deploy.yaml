@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - image: penguin1234/back-struct:latest
+        imagePullPolicy: Always
         name: back-container
         ports:
         - containerPort: 8080

@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - image: penguin1234/front-struct:latest
+        imagePullPolicy: Always
         name: front-container
         ports:
         - containerPort: 3000
