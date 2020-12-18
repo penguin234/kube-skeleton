@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ping-pong
+spec:
+  selector:
+    matchLabels:
+      app: pp
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: pp
+    spec:
+      containers:
+      - image: penguin1234/flask-ping:1.0.0
+        imagePullPolicy: Always
+        name: ping
+        ports:
+        - containerPort: 5000
+      - image: 
+        image: penguin1234/pyadd-pong:1.0.0
+        imagePullPolicy: Always
+        name: pong
+        ports:
+        - containerPort: 7000
