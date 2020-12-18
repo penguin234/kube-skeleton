@@ -13,7 +13,7 @@ spec:
         app: pp
     spec:
       containers:
-      - image: penguin1234/flask-ping:1.0.0
+      - image: penguin1234/flask-ping:1.0.3
         imagePullPolicy: Always
         name: ping
         ports:
